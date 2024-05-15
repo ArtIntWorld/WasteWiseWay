@@ -17,13 +17,6 @@
          <%@include  file="Heada.jsp" %>
         <br><br><br>
         <div id="tab" align="center">
-        <%
-        if(request.getParameter("did")!=null){
-        String up = "update tbl_rdwaste set rdwaste_status= 1 where rdwaste_id='" + request.getParameter("did") + "'";
-        con.executeCommand(up);
-        response.sendRedirect("ViewRoadwaste.jsp");
-        }
-     %>
          
         <table border="1" align="center">
             <tr>
@@ -35,10 +28,10 @@
                 <th>Details</th>
                 <th>Photo</th>
                 <th>Contact</th>
-                <th>Action</th>
+                <th>Status</th>
             </tr>
             <%
-                String select = "select * from tbl_rdwaste r inner join tbl_user u on u.user_id=r.user_id inner join tbl_place p on p.place_id=r.place_id inner join tbl_agency ag on ag.district_id=p.district_id inner join tbl_district d on d.district_id=p.district_id inner join tbl_type t on t.type_id=p.type_id where rdwaste_status='0' and agency_id='"+session.getAttribute("agid")+"' ";
+                String select = "select * from tbl_rdwaste r inner join tbl_user u on u.user_id=r.user_id inner join tbl_place p on p.place_id=r.place_id inner join tbl_agency ag on ag.district_id=p.district_id inner join tbl_district d on d.district_id=p.district_id inner join tbl_type t on t.type_id=p.type_id where rdwaste_status='2' and agency_id='"+session.getAttribute("agid")+"' ";
                 ResultSet rs = con.selectCommand(select);
                 int i = 0;
                 while (rs.next()) {
@@ -53,10 +46,7 @@
                 <td><%=rs.getString("rdwaste_details")%></td>
                <td><img src="../Assets/Files/RoadwastePhoto/<%=rs.getString("rdwaste_photo")%>" width="120" height="120"/></td>
                 <td><%=rs.getString("user_contact")%></td>
-                <td>
-                    <a href="ViewRoadwaste.jsp?did=<%=rs.getString("rdwaste_id")%>">Picked</a>
-                </td>
-                
+                <td>Picked</td>
             </tr>
             <%
                 }

@@ -112,7 +112,7 @@ System.out.print(InsQry);
             }, 40);
         </script>
         <%
-                }
+                } 
             }
         %>
 

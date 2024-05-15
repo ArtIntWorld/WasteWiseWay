@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>WasteWiseWay - Building a Green Environment</title>
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -75,7 +75,8 @@
             margin: 0;
             display: flex;
             font-weight: bold;
-            color: rgba(234, 234, 234, 0.75);
+            color: rgba(19, 17, 17, 0.5);
+            cursor: default;
         }
 
         ul.list li 
@@ -83,6 +84,7 @@
             display: inline;
             margin-right: 35px;
             margin-left: 30px;
+            color: rgba(19, 17, 17, 0);
 
         }
         
@@ -205,9 +207,8 @@
             <div class="navbar">
                 <div class="logosym"><a href="index.jsp"><img class="logo" src="Assets/Template/Main/images/WWWlogo.png"></a></div>
                 <ul class="list">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li>About Us</li>
+                    <li>Portfoli</li>
                 </ul>
                 <button id="btn1" onclick="navigateToPage('Guest/Login.jsp')">Login</button>
                 <button id="btn2" onclick="navigateToPage('Guest/Register.jsp')">Register</button>

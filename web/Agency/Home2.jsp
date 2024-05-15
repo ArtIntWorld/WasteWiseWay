@@ -45,7 +45,7 @@
         <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
-                <a href="../Assets/Template/AgencyTemp/index.html" class="navbar-brand mx-4 mb-3">
+                <a href="Home2.jsp" class="navbar-brand mx-4 mb-3">
                     <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>WELCOME</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
@@ -68,14 +68,12 @@
                            
                         </div>
                     </div>
-                    <div class="nav-item dropdown">
-                        <a href="../Assets/Template/AgencyTemp/#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Complaint</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="ViewComplaint.jsp" class="dropdown-item">View Complaint</a>
-                            <!--<a href="ReplyComplaint.jsp" class="dropdown-item">Reply Complaint</a>-->
-                           
-                        </div>
-                    </div>
+                    
+                    <a href="UserRegistered.jsp" class="dropdown-item">Users</a>
+                    
+                    
+                    <a href="ViewComplaint.jsp" class="dropdown-item">View Complaint</a>
+                          
                     <a href="ViewRoadwaste.jsp" class="nav-item nav-link">View Road Waste</a>
                     
                    
@@ -148,7 +146,6 @@
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
                             <!--/*** This template is free as long as you keep the footer author?s credit link/attribution link/backlink. If you'd like to use the template without the footer author?s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed By <a href="https://htmlcodex.com">Group No. 5</a>
                       
                       
                         </div>

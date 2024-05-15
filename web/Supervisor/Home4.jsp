@@ -45,7 +45,7 @@
             <!-- Sidebar Start -->
             <div class="sidebar pe-4 pb-3">
                 <nav class="navbar bg-light navbar-light">
-                    <a href="../Assets/Template/AgencyTemp/index.html" class="navbar-brand mx-4 mb-3">
+                    <a href="Home4.jsp" class="navbar-brand mx-4 mb-3">
                         <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>WELCOME</h3>
                     </a>
                     <div class="d-flex align-items-center ms-4 mb-4">
@@ -78,7 +78,6 @@
                             </div>
                         </div>
 
-                    
 
                     </div>
                 </nav>
@@ -114,6 +113,7 @@
                             <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
                                 <a href="SupMyProfile.jsp" class="dropdown-item">My Profile</a>
                                 <a href="SupEditProfile.jsp" class="dropdown-item">Edit Profile</a>
+                                <a href="../index.jsp" class="dropdown-item">Logout</a>
 
                             </div>
                         </div>

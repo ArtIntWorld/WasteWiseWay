@@ -45,7 +45,7 @@
             <!-- Sidebar Start -->
             <div class="sidebar pe-4 pb-3">
                 <nav class="navbar bg-light navbar-light">
-                    <a href="../Assets/Template/AgencyTemp/index.html" class="navbar-brand mx-4 mb-3">
+                    <a href="Home4.jsp" class="navbar-brand mx-4 mb-3">
                         <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>WELCOME</h3>
                     </a>
                     <div class="d-flex align-items-center ms-4 mb-4">
@@ -58,20 +58,16 @@
 
                         </div>
                     </div>
-                    <div class="navbar-nav w-100">
 
-                        <div class="nav-item dropdown">
-                            <a href="viewuserwastereq.jsp" class="nav-link dropdown-toggle">Work</a>
+                            <a href="viewuserwastereq.jsp" class="nav-link dropdown-toggle">House Waste</a>
                             
-                        </div>
-
+                            <a href="RoadPick.jsp" class="nav-link dropdown-toggle">Road Waste</a>
+                            
 <!--                     <div class="nav-item dropdown">
                              <a href="map.jsp" class="nav-link dropdown-toggle">Route</a>
                             
                         </div>-->
 
-
-                    </div>
                 </nav>
             </div>
 
@@ -103,8 +99,10 @@
                                 <span class="d-none d-lg-inline-flex">Employee</span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                                
                                 <a href="SupMyProfile.jsp" class="dropdown-item">My Profile</a>
                                 <a href="SupEditProfile.jsp" class="dropdown-item">Edit Profile</a>
+                                <a href="../index.jsp" class="dropdown-item">Logout</a>
 
                             </div>
                         </div>

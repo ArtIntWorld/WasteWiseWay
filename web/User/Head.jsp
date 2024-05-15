@@ -44,7 +44,7 @@
 
         <nav class="navbar navbar-expand-lg" style="background-color:#b8ceb8 ">
             <div class="container">
-                <a class="navbar-brand me-lg-5 me-0" href="index.html">
+                <a class="navbar-brand me-lg-5 me-0" href="Home3.jsp">
                     <img src="../Assets/Template/Main/images/WWWlogo.png" width="57" class=" img-fluid">
                 </a>
 

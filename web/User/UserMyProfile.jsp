@@ -49,29 +49,10 @@
                         <td>Address</td>
                         <td><%=rs.getString("user_address")%></td>
                     </tr>
-                    <tr>
-                        <td colspan="2" align="center">
-                            <div id="code" align="center"></div>
-                        </td>
-                    </tr>
                 </table> 
             </form>
         </div>
-        <script>
-            
-
-            var array ='{ "id" : "' +<%=rs.getString("user_id")%> +'"  }';
-            var qrcode = new QRCode(document.getElementById("code"), {
-                text: array,
-                width: 128,
-                height: 128,
-                colorDark: "#5868bf",
-                colorLight: "#ffffff",
-                correctLevel: QRCode.CorrectLevel.H,
-            });
-            
-
-        </script>
+        
     </body>
 </html>
 

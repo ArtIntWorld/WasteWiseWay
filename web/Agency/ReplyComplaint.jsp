@@ -18,10 +18,11 @@
         <br><br><br>
         <div id="tab" align="center">
         <%
-        if(request.getParameter("btnsave")!=null){
+        if(request.getParameter("btnsave")!=null)
+        {
         String up = "update tbl_complaint set complaint_status= 1, complaint_reply = '"+request.getParameter("txtreply")+"' where complaint_id='" + request.getParameter("did") + "'";
         con.executeCommand(up);
-        response.sendRedirect("ReplyComplaint.jsp");
+        response.sendRedirect("Home2.jsp");
         }
         %>
         

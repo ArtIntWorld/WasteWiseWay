@@ -90,14 +90,14 @@
 
                             if ((received != 0) && (payed != 0)) {
                                 if ((rs.getInt("user_pay") == 0) && (rs.getInt("supervisor_pay") == 0)) {
-                                    out.print("Reeive= " + received + " and Pay= " + payed);
+                                    out.print("Receive= " + received + " and Pay= " + payed);
 
                                 } else if ((rs.getInt("user_pay") == 1) && (rs.getInt("supervisor_pay") == 0)) {
                                     out.print("Recieved= " + received + " and Pay= " + payed);
 
                         %>
 
-                        <br> <a href="Payment.jsp?id=<%=rs.getString("wastereq_id")%>&amount=<%=rs.getString("recived")%>">Payment to User</a>
+                        <br> <a href="Payment.jsp?id=<%=rs.getString("wastereq_id")%>&amount=<%=rs.getString("payed")%>">Payment to User</a>
 
                         <%
                                         } else if ((rs.getInt("user_pay") == 1) && (rs.getInt("supervisor_pay") == 1)) {

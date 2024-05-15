@@ -27,7 +27,7 @@
 
                 <tr>
                     <td>Email</td>
-                    <td><input type="email" name="txtemail" required="required" autocomplete="off"></td>
+                    <td><input type="email" name="txtemail" required="required" pattern=".*@gmail\.com$" autocomplete="off"></td>
                 </tr>
                 <tr>
                     <td>Address</td>
@@ -38,7 +38,7 @@
 
                 <tr>
                     <td>Contact</td>
-                    <td><input type="text" name="txtcontact" required="required" autocomplete="off" pattern="[7-9]{1}[0-9]{9}" title="Phone number starting with digits from 7-9 and remaing 9 digits from 0-9"> </td>
+                    <td><input type="text" name="txtcontact" required="required" autocomplete="off" maxlength="10" pattern="[7-9]{1}[0-9]{9}" title="Phone number starting with digits from 7-9 and remaing 9 digits from 0-9"> </td>
                 </tr>
                 <tr>
                 <td>Gender</td>
@@ -97,7 +97,7 @@
                 </tr>
                 <tr>
                     <td>Password</td>
-                    <td><input type="password" name="txtpassword" required="required"></td>
+                    <td><input type="password" id="password" style="width: 90%" name="password" required="required" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.*\s).{6,}" title="Password must be at least 6 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character."></td>
                 </tr>
                 <tr>
                     <td colspan="2" align="center">

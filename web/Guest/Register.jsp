@@ -324,7 +324,7 @@
         <div class="container">
             <div class="black-overlay"></div>
             <div class="glass" id="userCard" onclick="window.location='UserRegisteration.jsp'">User</div>
-            <div class="glass" id="agencyCard" onclick="window.location='AGCR.jsp'">Agency</div>
+            <div class="glass" id="agencyCard" onclick="window.location='AgencyRegisteration.jsp'">Agency</div>
         </div>
         
         <div id="registrationForm">

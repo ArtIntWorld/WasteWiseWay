@@ -165,6 +165,7 @@
     } else if (resul.next()) {
         session.setAttribute("supid", resul.getString("supervisor_id"));
         session.setAttribute("supname", resul.getString("supervisor_name"));
+        session.setAttribute("supplace", resul.getString("place_id"));
     %>
     <script>
         window.location = "../Supervisor/Home4.jsp";

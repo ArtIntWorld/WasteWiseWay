@@ -133,7 +133,7 @@
         <%
         } else {
                     
-            String InsQry = "insert into tbl_user(user_name,user_email,user_address,user_contact,place_id,user_houseno,user_photo,user_proof,user_password,user_latitude,user_longitude)"
+            String InsQry = "insert into tbl_user(user_name,user_email,user_contact,user_address,place_id,user_houseno,user_photo,user_proof,user_password,user_latitude,user_longitude)"
                         + "values('" + value[0] + "','" + value[1] + "','" + value[2] + "','" + value[3] + "','" + value[6] + "','" + value[7] + "','" + photo + "','" + proof + "','" + value[8] + "','" + value[9] + "','" + value[10] + "')";
 
                 boolean status = obj.executeCommand(InsQry);

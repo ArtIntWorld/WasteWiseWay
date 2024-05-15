@@ -131,7 +131,7 @@
         <%
         } else {
                     
-            String InsQry = "insert into tbl_agency(agency_name,agency_email,agency_address,agency_contact,district_id,agency_logo,agency_proof,agency_password,agency_doj)"
+            String InsQry = "insert into tbl_agency(agency_name,agency_email,agency_contact,agency_address,district_id,agency_logo,agency_proof,agency_password,agency_doj)"
                     + "values('" + value[0] + "','" + value[1] + "','" + value[2] + "','" + value[3] + "','" + value[4] + "','" + logo + "','" + proof + "','" + value[5] + "',curdate())";
             
             boolean status = obj.executeCommand(InsQry);

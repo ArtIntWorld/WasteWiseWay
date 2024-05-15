@@ -13,6 +13,7 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <%@include  file="Headu.jsp" %>
         <%
             if (request.getParameter("asid") != null) {
                 String up = "update tbl_wasterequest set employee_id='" + request.getParameter("asid") + "', wastereq_status=1 where wastereq_id='" + request.getParameter("wid") + "' ";
@@ -24,7 +25,7 @@
                 String up1 = "update tbl_rdwaste set employee_id='" + request.getParameter("rsid") + "', rdwaste_status=1 where rdwaste_id='" + request.getParameter("rwid") + "' ";
                 // out.print(up);
                 con.executeCommand(up1);
-                response.sendRedirect("viewuserwastereq.jsp");
+                response.sendRedirect("Home4.jsp");
             }
 
 
@@ -73,6 +74,7 @@
             <%
                 }
             %>
-        </table
+        </table>
+        <%@include file="Footu.jsp" %>
     </body>
 </html>

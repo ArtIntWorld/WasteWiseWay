@@ -20,12 +20,10 @@
             <tr>
                 <th>Sl. No.</th>
                 <th>District</th>
-                 <th>Type</th>
                 <th>Place</th>
                 <th>Landmark</th>
                 <th>Details</th>
                 <th>Photo</th>
-                <th>Contact</th>
                 <th>Action</th>
             </tr>
             <%//out.print(session.getAttribute("usid"));
@@ -38,15 +36,13 @@
             <tr>
                 <td><%=i%></td>
                 <td><%=rs.getString("district_name")%></td>
-                <td><%=rs.getString("type_name")%></td>
                 <td><%=rs.getString("place_name")%></td>
                 <td><%=rs.getString("rdwaste_landmark")%></td>
                 <td><%=rs.getString("rdwaste_details")%></td>
                <td><img src="../Assets/Files/RoadwastePhoto/<%=rs.getString("rdwaste_photo")%>" width="120" height="120"/></td>
-                <td><%=rs.getString("user_contact")%></td>
                 <td>
                     <%
-                    if(rs.getString("rdwaste_status").equals("1"))
+                    if(rs.getString("rdwaste_status").equals("2"))
                         out.print("picked");
                     else
                         out.print("pending");

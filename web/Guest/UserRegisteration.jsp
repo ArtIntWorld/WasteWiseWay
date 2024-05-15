@@ -330,7 +330,7 @@
                         </tr>
                         <td class="formtext">Address</td>
                         <td>
-                            <textarea name="txtaddress" rows="3" cols="20"  required="required" autocomplete="off" pattern="^[A-Z]+[a-zA-Z ]*$" title="First Letter Must be Capital and input must be letters"></textarea>
+                            <textarea name="txtaddress" rows="3" cols="20" required="required" autocomplete="off" pattern="^[A-Za-z][a-zA-Z0-9\s]*$" title="Address must start with alphabets"></textarea>
                         </td>
 
                         <td colspan="2"  align="center">
@@ -416,7 +416,7 @@
                     </tr>
                     <tr>
                         <td class="formtext">Password</td>
-                        <td><input type="password" style="width: 90%" name="txtpassword" required="required">
+                        <td><input type="password" id="password" style="width: 90%" name="password" required="required" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.*\s).{6,}" title="Password must be at least 6 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character."></td>
                             <input type="hidden" name="user_latitude" id="user_latitude" value="2435678876">
                             <input type="hidden" name="user_longitude" id="user_longitude" value="86754352678">
                         </td>
@@ -436,6 +436,43 @@
     </div>
 </div>
 </div>
+                                
+                                
+<script>
+function checkPasswordStrength() {
+    var password = document.getElementById("password").value;
+    var strength = 0;
+
+    // Check password length
+    if (password.length >= 8) {
+        strength++;
+    }
+
+    // Check if password contains uppercase letters
+    if (/[A-Z]/.test(password)) {
+        strength++;
+    }
+
+    // Check if password contains lowercase letters
+    if (/[a-z]/.test(password)) {
+        strength++;
+    }
+
+    // Check if password contains numbers
+    if (/[0-9]/.test(password)) {
+        strength++;
+    }
+
+    // Check if password contains special characters
+    if (/[^A-Za-z0-9]/.test(password)) {
+        strength++;
+    }
+
+    // You can define your own criteria for password strength
+    // Here, we're just displaying the strength level
+    console.log("Password strength: " + strength);
+}
+</script>                               
 
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <script>

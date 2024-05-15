@@ -31,7 +31,7 @@
            
             </tr>
             <%
-                String select = "select * from tbl_rdwaste r inner join tbl_place p on p.place_id=r.place_id inner join tbl_user u on u.user_id=r.user_id inner join tbl_supervisor s on s.place_id=u.place_id where rdwaste_status='0'";
+                String select = "select * from tbl_rdwaste r inner join tbl_place p on p.place_id=r.place_id inner join tbl_user u on u.user_id=r.user_id inner join tbl_supervisor s on s.place_id=u.place_id where rdwaste_status='0' and r.place_id = '" + session.getAttribute("supplace") + "'";
 //out.print(select);
                 ResultSet rs = con.selectCommand(select);
                 int i = 0;

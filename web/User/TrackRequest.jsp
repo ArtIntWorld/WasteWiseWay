@@ -118,7 +118,7 @@
                                  }
                                  
                                  else if((rs.getInt("user_pay") == 1) && (rs.getInt("supervisor_pay")==1)){
-                                      out.print("Paid= " + received + " and Receive= " + payed);
+                                      out.print("Paid= " + received + " and Received= " + payed);
                                  }
                                 
                             }
